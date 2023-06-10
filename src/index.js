@@ -11,12 +11,25 @@ const root = ReactDOM.createRoot(el);
 // 4. Create Component
 function App(){
 //  If we want to print two variables
-    const name = "Prajwal"
-    const age = 23
+    const name = "Prajwal";
+    const age = 23;
+    const message = "Enter age";
     return(
         <div>
             <h1>Hi my name is {name}</h1>
             <h2>My age is {age}</h2>
+            {/* Customizing Elements with prop */}
+            <br></br>
+            <div>
+            <input 
+            type='number'
+            min={5}
+            max={10}
+            list={[1,2,3]}
+            style={{color:'red'}}
+            alt={message}
+            ></input>
+            </div>
         </div>
     );
 }
