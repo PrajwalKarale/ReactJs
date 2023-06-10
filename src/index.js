@@ -1,17 +1,25 @@
+// 1. Import the React and React-Dom Libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// 2. Get reference to the div with ID root
+const el = document.getElementById('root');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// 3. Tell react to control the element
+const root = ReactDOM.createRoot(el);
+
+// 4. Create Component
+function App(){
+//  If we want to print two variables
+    const name = "Prajwal"
+    const age = 23
+    return(
+        <div>
+            <h1>Hi my name is {name}</h1>
+            <h2>My age is {age}</h2>
+        </div>
+    );
+}
+
+// 5. Show the component on the screen
+root.render(<App/>);
