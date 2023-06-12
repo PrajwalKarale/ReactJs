@@ -34,6 +34,9 @@ function App(){
             <div>
                 <p>Video lecture regarding Converting HTML to JSX</p>
                 <textarea autoFocus = {true}></textarea>
+                <p>In JSX boolean 'true' can be written with the property name whether as False should be written in curly braces</p>
+                <input spellCheck={true}></input><hr></hr>
+                <input placeholder='hi there'></input>
             </div>
         </div>
     );
