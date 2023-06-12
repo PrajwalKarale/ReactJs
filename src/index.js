@@ -21,14 +21,19 @@ function App(){
             {/* Customizing Elements with prop */}
             <br></br>
             <div>
-            <input 
-            type='number'
-            min={5}
-            max={10}
-            list={[1,2,3]}
-            style={{color:'red'}}
-            alt={message}
-            ></input>
+                <input 
+                type='number'
+                min={5}
+                max={10}
+                list={[1,2,3]}
+                style={{color:'red'}}
+                alt={message}
+                ></input>
+            </div>
+            <hr></hr>
+            <div>
+                <p>Video lecture regarding Converting HTML to JSX</p>
+                <textarea autoFocus = {true}></textarea>
             </div>
         </div>
     );
